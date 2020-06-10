@@ -15,9 +15,9 @@ public class BMIsteps extends AbstractClass{
 	}
 
 	@When("User enter in {string} in height textbox")
-	public void user_enter_in_in_height_textbox(String ht) {
+	public void user_enter_in_in_height_textbox(String ht) throws InterruptedException {
 		bmip.entereight(ht);
-	    
+		Thread.sleep(2000);
 	}
 
 	@When("User enter {string} in weight textbox")
